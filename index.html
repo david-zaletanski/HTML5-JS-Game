@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Treetop Showdown</title>
+		<style>
+			canvas {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				background: transparent;
+			}
+			#background {
+				z-index: -2;
+			}
+			#main { 
+				z-index: -1;
+		    }
+		    #ui {
+		    	z-index: 0;
+		    }
+		</style>
+	</head>
+	<body>
+	<!-- The canvas for the panning background -->
+	<canvas id="background" width="300" height="600">
+		Your browser does not support canvas. Please try again with an HTML5 enabled browser such as Chrome or Firefox.
+	</canvas>
+	<!-- The canvas for everything else -->
+	<canvas id="main" width="300" height="600">
+	</canvas>
+	<canvas id="ui" width="300" height="600">
+	</canvas>
+	<script src="treetop_showdown.js"></script>
+	</body>
+</html>
