@@ -68,7 +68,10 @@ function Drawable() {
 
 function Unit() {
 	this.init = function(x, y, hp, width, height) {
-		this.
+		this.x = x;
+		this.y = y;
+		this.width = width;
+		this.height = height;
 	}
 	this.health = 100;
 
